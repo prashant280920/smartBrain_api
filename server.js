@@ -36,8 +36,8 @@ app.put('/image',(req, res) => { image.handleImage(req, res, db)} )
 
 
 
-app.listen(3001, () => {
-	console.log("app is reunning");
+app.listen(process.env.PORT || 3001, () => {
+	console.log(`app is reunning on port ${process.env.PORT}`);
 })
 
 /*	
