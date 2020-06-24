@@ -28,7 +28,7 @@ const handleRegister = (req, res, db, bcrypt) => {
 		.catch(trx.rollback)
 	})
 	
-	.catch(err => res.status(404).json('incorrect form submission'))
+	.catch(err => res.status(404).json('unable to register'))
 	
 }
 
